@@ -1,0 +1,21 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Copy Archive 世界の広告コピー</title><meta name="description" content="世界の広告コピーを、コピーライター・制作年・クライアント・受賞歴・出典とあわせて収録するアーカイブ。">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Jost:wght@500;700;800&family=Shippori+Mincho+B1:wght@700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"><link rel="stylesheet" href="style.css"></head><body>
+<header class="top"><div class="wrap"><a class="logo" href="./" style="text-decoration:none;color:inherit"><i>コ</i>Copy Archive</a>
+<label class="searchbtn" style="cursor:text"><input id="q" type="search" placeholder="コピー・コピーライター・クライアントを検索" style="all:unset;flex:1;min-width:0;color:var(--fg)"><kbd>⌘K</kbd></label></div></header>
+<nav class="cats" aria-label="絞り込み"><div class="wrap">
+<div class="pills" id="langPills" role="group" aria-label="言語"></div>
+<div class="selects">
+<select id="fCountry" aria-label="国"><option value="">国</option></select>
+<select id="fDecade" aria-label="年代"><option value="">年代</option></select>
+<select id="fKind" aria-label="種類"><option value="">種類</option></select>
+<select id="fAward" aria-label="受賞"><option value="">受賞</option><option value="yes">受賞あり</option></select>
+<select id="fSort" aria-label="並び順"><option value="old">古い順</option><option value="new">新しい順</option><option value="lang">言語順</option><option value="country">国順</option></select>
+</div>
+<div class="seg" role="group" aria-label="収録の範囲"><button type="button" data-set="main" aria-pressed="true">広告コピー</button><button type="button" data-set="tm" aria-pressed="false" id="tmBtn">商標スローガン</button></div>
+<div class="seg" role="group" aria-label="表示" id="viewSeg"><button type="button" data-view="list" aria-pressed="true">作品</button><button type="button" data-view="people" aria-pressed="false">書き手</button><button type="button" data-view="time" aria-pressed="false">年表</button></div>
+</div></nav>
+<div class="wrap list-wrap"><div class="intro"><h1 id="introTitle">世界の広告コピー</h1><span class="mono" id="count" style="color:var(--muted)"></span></div>
+<div class="stats" id="stats" style="margin:-4px 0 18px"></div><main id="main"><div class="loading">読み込み中</div></main></div>
+<footer><div class="wrap"><span>出典のある情報だけを収録しています。各作品ページに出典へのリンクがあります。</span></div></footer>
+<script src="app.js"></script></body></html>
